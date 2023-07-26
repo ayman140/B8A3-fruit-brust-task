@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>fruit-House</title>
+    <link rel="stylesheet" href="style.css">
     <!-- tailwind and daisy UI -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -13,9 +14,42 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:wght@400;700;900&family=Open+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header></header>
+    <header>
+      <section class="p-10  ">
+        <div class="carousel w-[1440px]">
+          <div id="slide1" class="carousel-item relative w-full">
+            <img src="images/banner1.png" class="w-full" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide4" class="btn btn-circle">❮</a> 
+              <a href="#slide2" class="btn btn-circle">❯</a>
+            </div>
+          </div> 
+          <div id="slide2" class="carousel-item relative w-full">
+            <img src="/images/banner2.png" class="w-full" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide1" class="btn btn-circle">❮</a> 
+              <a href="#slide3" class="btn btn-circle">❯</a>
+            </div>
+          </div> 
+          <div id="slide3" class="carousel-item relative w-full">
+            <img src="/images/banner3.png" class="w-full" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide2" class="btn btn-circle">❮</a> 
+              <a href="#slide4" class="btn btn-circle">❯</a>
+            </div>
+          </div> 
+          <div id="slide4" class="carousel-item relative w-full">
+            <img src="/images/banner4.png" class="w-full" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide3" class="btn btn-circle">❮</a> 
+              <a href="#slide1" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
     <main>  
-      <section> 
+      <section class="team-section"> 
         <div class="bg-base-100"> 
           <div class="text-center">
             <h3 class="text-5xl  font-extrabold  ">Meet the team section</h3>
@@ -89,18 +123,46 @@
             </div>
         </div>
       </section>
-      <section>
-       <div>  
-          <h3 class="text-5xl font-extrabold text-black"  >Deal of the day</h3>
+      <section> 
+      
+       <div class="flex justify-between">
+        <div class="pl-20 pt-10 pb-10">  
+          <h3 class="text-5xl font-extrabold text-black "  >Deal of the day</h3>
           
           <p>Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br> Latin literature from 45 BC, making it over 2000 years old.</p>
         </div>
         <div>
-
+          <div class="grid grid-flow-col gap-5 text-center pr-10 pt-10 auto-cols-max">
+            <div class="flex flex-col">
+              <span class="countdown font-mono text-5xl">
+                <span style="--value:15;"></span>
+              </span>
+              days
+            </div> 
+            <div class="flex flex-col">
+              <span class="countdown font-mono text-5xl">
+                <span style="--value:10;"></span>
+              </span>
+              hours
+            </div> 
+            <div class="flex flex-col">
+              <span class="countdown font-mono text-5xl">
+                <span style="--value:24;"></span>
+              </span>
+              min
+            </div> 
+            <div class="flex flex-col">
+              <span class="countdown font-mono text-5xl">
+                <span style="--value:22;"></span>
+              </span>
+              sec
+            </div>
+          </div>
         </div>
+       </div>
         <!-- deal of the day -->
         <div>
-            <div class="flex justify-center gap-4 pt-10">
+            <div class="flex justify-center   gap-4 pt-10">
               <!-- card 1 -->
               <div class="card w-80 bg-base-100 shadow-xl  ">
                 <figure class="px-10 pt-10">
@@ -118,9 +180,9 @@
                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-rose-500" />
                   </div>
                   <!-- The button to open modal -->
-                  <a href="#my_modal_8" class="text-rose-500">Details</a>
+                  <a href="#my_modal_6" class="text-rose-500">Details</a>
                    
-                  <div class="modal" id="my_modal_8">
+                  <div class="modal" id="my_modal_6">
  
                     <div class="card w-96 bg-base-100 shadow-xl">
                       <figure class="px-10 pt-10">
@@ -176,9 +238,9 @@
                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-rose-500" />
                   </div>
                   <!-- The button to open modal -->
-                  <a href="#my_modal_8" class="text-rose-500">Details</a>
+                  <a href="#my_modal_7" class="text-rose-500">Details</a>
                    
-                  <div class="modal" id="my_modal_8">
+                  <div class="modal" id="my_modal_7">
  
                     <div class="card w-96 bg-base-100 shadow-xl">
                       <figure class="px-10 pt-10">
@@ -187,7 +249,7 @@
                       <div class="card-body items-center text-center">
                         <h2 class="card-title">Orange</h2>
                         <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
-                        
+                         
                         <div class="rating">
                           <input type="radio" name="rating-2" class="mask mask-star-2 bg-rose-500" />
                           <input type="radio" name="rating-2" class="mask mask-star-2 bg-rose-500" />
@@ -240,7 +302,7 @@
  
                     <div class="card w-96 bg-base-100 shadow-xl">
                       <figure class="px-10 pt-10">
-                        <img src="images/fruit6.png" alt=" " class="rounded-xl" />
+                        <img src="images/fruit8.png" alt=" " class="rounded-xl" />
                       </figure>
                       <div class="card-body items-center text-center">
                         <h2 class="card-title">Red Dragon</h2>
@@ -292,23 +354,23 @@
                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-rose-500" />
                   </div>
                   <!-- The button to open modal -->
-                  <a href="#my_modal_8" class="text-rose-500">Details</a>
+                  <a href="#my_modal_9" class="text-rose-500">Details</a>
                    
-                  <div class="modal" id="my_modal_8">
+                  <div class="modal" id="my_modal_9">
  
                     <div class="card w-96 bg-base-100 shadow-xl">
                       <figure class="px-10 pt-10">
-                        <img src="images/fruit6.png" alt=" " class="rounded-xl" />
+                        <img src="images/fruit9.png" alt=" " class="rounded-xl" />
                       </figure>
                       <div class="card-body items-center text-center">
-                        <h2 class="card-title">Red Dragon</h2>
+                        <h2 class="card-title">Banana</h2>
                         <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
                         
                         <div class="rating">
                           <input type="radio" name="rating-2" class="mask mask-star-2 bg-rose-500" />
                           <input type="radio" name="rating-2" class="mask mask-star-2 bg-rose-500" />
-                          <input type="radio" name="rating-2" class="mask mask-star-2 bg-rose-500"  checked />
-                          <input type="radio" name="rating-2" class="mask mask-star-2 bg-rose-500" />
+                          <input type="radio" name="rating-2" class="mask mask-star-2 bg-rose-500"   />
+                          <input type="radio" name="rating-2" class="mask mask-star-2 bg-rose-500" checked />
                           <input type="radio" name="rating-2" class="mask mask-star-2 bg-rose-500" />
                         </div>
                         <div class="card-actions">
@@ -333,8 +395,12 @@
                   
                 </div>
               </div>
+              
             </div>
-
+           <div class="text-center p-10">
+            <button class="btn  btn-error text-slate-50 ">Shop All</button>
+           </div>
+             
         </div>
        
       </section>

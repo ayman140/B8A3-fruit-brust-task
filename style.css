@@ -1,1 +1,8 @@
- 
+ .team-section {
+    
+        background-image: url('images/team.png');
+        background-size: cover;  
+        background-repeat: no-repeat;
+        background-position: center center;  
+      }
+      
