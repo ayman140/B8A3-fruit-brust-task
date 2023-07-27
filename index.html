@@ -12,6 +12,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:wght@400;700;900&family=Open+Sans&display=swap" rel="stylesheet">
+    <!-- font awesome  -->
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
 </head>
 <body>
     <header>
@@ -98,13 +101,13 @@
     </header>
     <main>  
       <!-- meet the team section -->
-      <section class="team-section md:"> 
+      <section class="team-section  "> 
         <div class="bg-base-100"> 
           <div class="text-center">
             <h3 class="text-5xl  font-extrabold  ">Meet with our team </h3>
           <p class="text-base font-base pt-4">Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br> Latin literature from 45 BC, making it over 2000 years old.</p>
           </div>
-            <div class="flex justify-center  ">
+            <div class="flex flex-col lg:flex-row justify-center items-center gap-5">
                 <div class="card w-60   ">
                     <figure class="px-10 pt-10">
                       <img src="images/member1.png" alt="member1" class="rounded-xl" />
@@ -170,14 +173,14 @@
                     </div>
                   </div>
             </div>
-        </div>
+       </div>
       </section>
-      <!-- deal of the day section  -->
-      <section> 
+      <!-- deal of the day section  --><!--   mt-32  lg:mb-32-->
+      <section class="max-w-screen-xl mx-auto mb-5 md:mt-500">  
       
-       <div class="flex justify-between">
-        <div class="pl-20 pt-10 pb-10">  
-          <h3 class="text-5xl font-extrabold text-black "  >Deal of the day</h3>
+       <div class="flex flex-col lg:flex-row justify-between items-center   ">
+        <div >  
+          <h3 class="text-5xl font-extrabold text-black  pb-10"  >Deal of the day</h3>
           
           <p>Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br> Latin literature from 45 BC, making it over 2000 years old.</p>
         </div>
@@ -212,7 +215,7 @@
        </div>
         <!-- deal of the day -->
         <div>
-            <div class="flex justify-center   gap-4 pt-10">
+            <div class="flex flex-col lg:flex-row justify-center items-center    gap-10  pt-10">
               <!-- card 1 -->
               <div class="card w-80 bg-base-100 shadow-xl  ">
                 <figure class="px-10 pt-10">
@@ -456,20 +459,20 @@
       </section>
          <!-- this is choose Us -->
          <section class="max-w-screen-xl lg:mb-32 mx-5 mt-5 lg:mt-0 lg:mx-auto">
-          <!-- this is headline -->
+ 
           <h1 class="text-[#121212] text-2xl lg:text-5xl font-extrabold text-center">Why Choose Us</h1>
           <p class="lg:text-base text-[#121212] text-center px-14 pt-2 pb-5 lg:mb-12 lg:mt-6 lg:px-[330px]">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
-          <!-- this Choose us container -->
+           
           <div class="grid grid-cols-1 gap-6 md:grid-cols-1 lg:grid-cols-3 lg:gap-6">
-            <!-- 1st content -->
+ 
             <div class="flex-1 space-y-7 sm:px-16 lg:px-0">
-              <!-- 1st dedicated -->
+             
               <div class=" flex flex-col lg:flex-row justify-center items-center gap-5">
-                <!-- icon -->
+                
                 <div>
-                  <i class="fa-solid fa-users-line text-2xl bg-[#12121219] border-2 rounded-full p-4"></i>
+                  <i class="fa-solid fa-check  "></i>
                 </div>
-                <!-- title -->
+                 
                 <div>
                   <h3 class="text-center lg:text-left text-2xl font-extrabold ">Dedicated Team</h3>
                   <div class=" divider divide-x-2 w-24 mt-1 mx-auto lg:mx-0 mb-0 text-[#121212]"></div>
@@ -479,11 +482,11 @@
 
               <!-- 2nd dedicated -->
               <div class="flex flex-col lg:flex-row justify-center items-center gap-5">
-                <!-- icon -->
+                 
                 <div>
                   <i class="fa-solid fa-heart text-2xl bg-[#12121219] border-2 rounded-full p-4"></i>
                 </div>
-                <!-- title -->
+                 
                 <div>
                   <h3 class="text-center lg:text-left text-2xl font-extrabold ">Fresh is Best</h3>
                   <div class=" divider divide-x-2 w-24 mt-1 mx-auto lg:mx-0 mb-0 text-[#121212]"></div>
@@ -493,11 +496,11 @@
 
               <!-- 3rd dedicated -->
               <div class="flex flex-col lg:flex-row justify-center items-center gap-5">
-                <!-- icon -->
+                
                 <div>
                   <i class="fa-solid fa-gift text-2xl bg-[#12121219] border-2 rounded-full p-4"></i>
                 </div>
-                <!-- title -->
+                 
                 <div>
                   <h3 class="text-center lg:text-left text-2xl font-extrabold ">Gift Certificates</h3>
                   <div class=" divider divide-x-2 w-24 mt-1 mx-auto lg:mx-0 mb-0 text-[#121212]"></div>
@@ -517,13 +520,13 @@
               <!-- 1st dedicated -->
               <div class="flex flex-col-reverse lg:flex-row justify-center items-center gap-5">
                 
-                <!-- title -->
+                 
                 <div>
                   <h3 class="text-center lg:text-right text-2xl font-extrabold ">Integrated Supplier</h3>
                   <div class=" divider divide-x-2 w-24 mt-1 lg:ml-60 mx-auto lg:mx-0 mb-0 text-[#121212]"></div>
                   <p class="text-center px-20 lg:px-0 lg:text-right font-medium">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
                 </div>
-                <!-- icon -->
+                 
                 <div>
                   <i class="fa-solid fa-apple-whole text-2xl bg-[#12121219] border-2 rounded-full p-4"></i>
                 </div>
@@ -532,7 +535,7 @@
               <!-- 2nd dedicated -->
               <div class="flex flex-col-reverse lg:flex-row justify-center items-center gap-5">
                 
-                <!-- title -->
+                 
                 <div>
                   <h3 class="text-center lg:text-right text-2xl font-extrabold ">Sustainable Practice</h3>
                   <div class=" divider divide-x-2 w-24 mt-1 lg:ml-60 mx-auto lg:mx-0 mb-0 text-[#121212]"></div>
@@ -547,7 +550,7 @@
               <!-- 3rd dedicated -->
               <div class="flex flex-col-reverse lg:flex-row justify-center items-center gap-5">
                 
-                <!-- title -->
+                 
                 <div>
                   <h3 class="text-center lg:text-right text-2xl font-extrabold ">The Benefits Only</h3>
                   <div class=" divider divide-x-2 w-24 mt-1 lg:ml-60 mx-auto lg:mx-0 mb-0 text-[#121212]"></div>
